@@ -24,13 +24,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="Left">
+      <aside>
         <NoteViewer notes={notes} />
-      </div>
-      <div>
-        <h2>Right</h2>
+      </aside>
+      <section>
+        <div className="top">  </div>
         <MarkdownInput handleSave={handleSave} />
-      </div>
+      </section>
     </div>
   );
 };

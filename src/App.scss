@@ -16,17 +16,63 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
   h1 {
     color:$primary;
+    font-weight: bold;
+    text-transform: uppercase;
   }
+}
+.top {
+}
+
+.preview {
+  height: 43vh;
+}
+.note {
+  cursor: pointer;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list {
+  cursor: pointer;
+}
+aside {
+  border-right: 1px solid white;
+  width: 20vw;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 80vw;
+  padding: 0em 1em;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.5em;
+  border: none;
+  padding: 2em;
+  background-color: $light;
+  color: white;
+  font-size:20px;
+}
+
+textarea {
+  height: 30vh;
 }
 
 .form-text-area{
   background-color:$light;
   outline: none;
   border: none;
+  resize: none;
 }
 
 .form-text-title {
@@ -36,5 +82,16 @@ body {
 .btn {
   color: white;
   background-color: $primary;
-  padding: 10px 50px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50;
+  font-size:20px;
+  &:hover {
+    background-color:darken($primary, 10%);
+    outline: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
 }

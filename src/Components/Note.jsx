@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Note = ({ title, content }) => (
-  <div>
+  <div className="note">
     <h1>{title}</h1>
     <p>{content}</p>
   </div>

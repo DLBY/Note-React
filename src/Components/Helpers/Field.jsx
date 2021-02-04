@@ -5,7 +5,7 @@ const Field = ({
   name, value, onChange,
 }) => (
   <div>
-    <input type="text" value={value} onChange={onChange} id={name} name={name} className="form-text-title" />
+    <input autoComplete="off" type="text" value={value} onChange={onChange} id={name} name={name} className="form-text-title" />
   </div>
 );
 

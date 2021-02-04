@@ -16,8 +16,8 @@ const MarkdownInput = ({ handleSave }) => {
 
   console.log(title);
   return (
-    <div>
-      <div>
+    <>
+      <div className="preview">
         <NoteDisplay title={title} content={content} />
       </div>
       <div>
@@ -25,7 +25,7 @@ const MarkdownInput = ({ handleSave }) => {
         <Textarea name="content" value={content} onChange={(e) => setContent(e.target.value)} />
         <Button content="Sauvegarder" className="btn" onClick={handleClick} />
       </div>
-    </div>
+    </>
   );
 };
 
