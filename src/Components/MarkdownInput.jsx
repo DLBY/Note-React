@@ -12,6 +12,8 @@ const MarkdownInput = ({ handleSave }) => {
   const handleClick = () => {
     const note = { title, content };
     handleSave(note);
+    setContent('');
+    setTitle('');
   };
 
   console.log(title);

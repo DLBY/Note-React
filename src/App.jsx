@@ -15,6 +15,10 @@ const App = () => {
     localStorage.setItem('notes', JSON.stringify(save));
   };
 
+  const handleDelete = (index) => {
+    localStorage.removeItem(notes[index]);
+  };
+
   useEffect(() => {
     let storedValues = localStorage.getItem('notes');
     storedValues = JSON.parse(storedValues);
@@ -25,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <aside>
-        <NoteViewer notes={notes} />
+        <NoteViewer notes={notes} handleDelete={handleDelete} />
       </aside>
       <section>
         <div className="top">  </div>
