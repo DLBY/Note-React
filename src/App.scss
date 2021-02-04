@@ -12,7 +12,11 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:white;
   .App {
+    height: 100vh;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   h1 {
     color:$primary;
@@ -28,4 +32,9 @@ body {
 .form-text-title {
   @extend .form-text-area;
   margin-bottom:1em;
+}
+.btn {
+  color: white;
+  background-color: $primary;
+  padding: 10px 50px;
 }
