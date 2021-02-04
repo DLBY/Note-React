@@ -1,1 +1,31 @@
 @import './Sass/index.scss';
+
+$dark : #1B1B1B;
+$primary : #C93A27;
+$light : #4B4B4B;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $dark;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+  .App {
+    text-align: center;
+  }
+  h1 {
+    color:$primary;
+  }
+}
+
+.form-text-area{
+  background-color:$light;
+  outline: none;
+  border: none;
+}
+
+.form-text-title {
+  @extend .form-text-area;
+  margin-bottom:1em;
+}
